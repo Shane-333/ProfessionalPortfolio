@@ -1,0 +1,25 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.matrix-rain {
+  position: relative;
+  background: black;
+}
+
+.matrix-rain::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnN0cWRlNXJwdWc2b3F0ZGt6c3B3Z3BsM2l6bGxpN2Q3czFvNXVxbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/smzfl3E7a4iHK/giphy.webp') repeat;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
+  pointer-events: none; /* Ensure the background doesn't interfere with other elements */
+}
