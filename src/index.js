@@ -28,3 +28,21 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+const socket = new WebSocket('ws://localhost:3001/ws');
+
+socket.onopen = function(event) {
+  console.log('WebSocket is open now.');
+};
+
+socket.onmessage = function(event) {
+  console.log('WebSocket message received:', event);
+};
+
+socket.onclose = function(event) {
+  console.log('WebSocket is closed now.');
+};
+
+socket.onerror = function(error) {
+  console.error('WebSocket error observed:', error);
+};

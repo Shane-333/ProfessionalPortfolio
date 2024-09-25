@@ -192,5 +192,7 @@
 .transparent-light-green-bg {
 	background-color: rgba(144, 238, 144, 0.5); /* Light Green with 50% transparency */
 	color: black; /* Text color black */
+	border-radius: 20px;
+	padding: 10px;
 }
 
